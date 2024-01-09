@@ -3,21 +3,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       const response = await fetch("https://datausa.io/api/data?drilldowns=Nation&measures=Population");
       const data = await response.json();
-  
       const app = document.getElementById('pc123456');
       const list = data.data;
-  
       let html = `<table class="table">
         <tr >
-      
           <th class="bg-primary text-white">#</th>
           <th class="bg-primary text-white">Nation</th>
           <th class="bg-primary text-white">Year</th>
           <th class="bg-primary text-white">Population</th>
         </tr>`;
-  
       let index = 1; 
-  
       list.forEach(element => {
         html += `<tr>
           <td>${index}</td>
@@ -28,7 +23,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         index++; 
       });
-      
       html += `</table>`;
       app.innerHTML = html;
     } catch (error) {
@@ -40,10 +34,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       const response = await fetch("https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students");
       const data = await response.json();
-  
       const app = document.getElementById('pc12345');
       const list = data;
-  
       let html = `<table class="table">
         <tr >
         <th class="bg-primary text-white">#</th>
@@ -61,7 +53,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         </tr>`;
         index++; 
       });
-  
       html += `</table>`;
       app.innerHTML = html;
     } catch (error) {
