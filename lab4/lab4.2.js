@@ -9,7 +9,8 @@ async function fetchUrls(urls){
     }
     return reSults;
 }
-console.log(reSults);
+//  thực hiện yêu cầu HTTP một cách tuần tự bằng cách sử dụng vòng lặp 
+//   await. Mỗi yêu cầu phải chờ cho đến khi yêu cầu trước đó hoàn thành.
 // 2
 async function fecthUrlsParallel(urls){
     const results = await Promise.all(
@@ -19,3 +20,6 @@ async function fecthUrlsParallel(urls){
     );
 }
 return results;
+// sử dụng Promise.all và map để thực hiện các yêu cầu HTTP 
+//đồng thời giúp cải thiện hiệu suất bằng cách không chờ mỗi yêu cầu hoàn thành trước khi bắt đầu yêu cầu tiếp theo.
+
