@@ -1,16 +1,25 @@
+// Bài 3
+// Sử dụng async await kết hợp với Promise để viết lại đoạn code dưới.
 const fs = require('fs').promises;
 const axios = require('axios');
 
-async function loadData() {
-    try {
-        const fileData = await fs.readFile('./data.json', { encoding: 'utf8' });
-        console.log('Data loaded from disk', fileData);
+const path = require('path');
 
-        const urlData = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-        console.log('Data downloaded from URL', urlData.data);
+const filePath = path.join(__dirname, 'data.json')
+
+async function fetchData() {
+    try {
+        // Đọc dữ liệu từ file
+        const fileData = await fs.readFile(filePath, { encoding: 'utf8' });
+        console.log('Dữ liệu được tải từ ổ đĩa', fileData);
+
+        // Gửi yêu cầu lấy dữ liệu từ URL
+        const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
+        console.log('Dữ liệu được tải từ URL', response.data);
     } catch (error) {
-        console.error('Error:', error.message);
+        console.error('Lỗi', error.message);
     }
 }
 
-loadData();
+// Gọi hàm fetchData để thực thi
+fetchData();
