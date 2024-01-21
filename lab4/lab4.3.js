@@ -21,5 +21,5 @@ async function fetchData() {
     }
 }
 
-// Gọi hàm fetchData để thực thi
+
 fetchData();
