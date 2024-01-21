@@ -1,0 +1,228 @@
+{
+  "categories": 
+   [ 
+     {
+    "id": 1,
+    "name": "Áo thun"
+},
+ {
+    "id": 2,
+    "name": "Áo sơ mi"
+},
+ {
+    "id": 3,
+    "name": "Áo khoác"
+},
+ {
+    "id": 4,
+    "name": "Quần "
+},
+ {
+    "id": 5,
+    "name": "Túi xách"
+}
+],
+
+"products": [
+  {
+    "id": 1,
+    "name": "EYE BOXY TEE",
+    "cate_id": 1,
+    "price": 499.999,
+    "detail": "FORM BOXY RAGLAN ",
+    "image": "https://product.hstatic.net/1000351433/product/eyes_boxy_tee_40129c061ad449d0a585b65cac097c49_master.png"
+  },
+  {
+    "id": 2,
+    "name": "SAND MIND ESCAPLE TEE",
+    "cate_id": 1,
+    "price": 999.999,
+    "detail": "OVERSIZED FIT",
+    "image": "https://product.hstatic.net/1000351433/product/mind-escape_4e240c883bff4bd3ab0f73bdabe90b00_master.jpg"
+  },
+  {
+    "id": 3,
+    "name": "STONE OF HEART TEE",
+    "cate_id": 1,
+    "price": 799.999,
+    "detail": "OVERSIZED FIT",
+    "image": "https://product.hstatic.net/1000351433/product/1__10__403b025fc25747aa918f4c1699cccfb0_master.jpg"
+  },
+  {
+    "id": 4,
+    "name": "YEAR OF DRAGON SHIRT",
+    "cate_id": 2,
+    "price": 399.999,
+    "detail": "OVERSIZED FIT",
+    "image": "https://product.hstatic.net/1000351433/product/year_of_dragon_shirt_1_270a7d77d862474d9cb7a81ac838b43d_master.jpg"
+  },
+  {
+    "id": 5,
+    "name": "HALFnHALF FREEFALL SHIRT",
+    "cate_id": 2,
+    "price": 650.000,
+    "detail": "OVERSIZED FIT",
+    "image": "https://product.hstatic.net/1000351433/product/4_68987eb147884149bb07a586e63d2229_master.jpg"
+  },
+  {
+    "id": 6,
+    "name": "OLD SKOOL FLANNEL RED",
+    "cate_id": 2,
+    "price": 299.000,
+    "detail": "OVERSIZED FIT ",
+    "image": "https://product.hstatic.net/1000351433/product/mat_truoc_12fe8692d6c646bab692bf1d0821ff94_master.jpg"
+  },
+  {
+    "id": 7,
+    "name": "TOO LAZY TO WEAR JACKET JEANS",
+    "cate_id": 3,
+    "price": 399.999,
+    "detail": "FORM OVERSIZE",
+    "image": "https://product.hstatic.net/1000351433/product/1_0570aebc80034b10ae02e187808d8177_master.png"
+  },
+  {
+    "id": 8,
+    "name": "ESCAPE RAGLAN HOODIE - GREY",
+    "cate_id": 3,
+    "price": 389.999,
+    "detail": "OVERSIZED BOXY FIT",
+    "image": "https://product.hstatic.net/1000351433/product/1__37__ca6df0a6fb32405081ac0602684d7caa_master.jpg"
+  },
+  {
+    "id": 9,
+    "name": "LUCKY YEAR HOODIE - RED",
+    "cate_id": 3,
+    "price": 389.999,
+    "detail": "OVERSIZED BOXY FIT",
+    "image": "https://product.hstatic.net/1000351433/product/1__45__d48c5e9483f5432fba516bc4b29e9a1f_master.jpg"
+  },
+  {
+    "id": 10,
+    "name": "YEAR OF DRAGON KHAKI PANTS",
+    "cate_id": 4,
+    "price": 650.999,
+    "detail": "TROUSERS",
+    "image": "https://product.hstatic.net/1000351433/product/year_of_dragon_khaki_pants_1_541ceace1d55426ca5be66d53101b6ed_master.jpg"
+  },
+  {
+    "id": 11,
+    "name": "PURPLE NOTHING 2 FEAR SHORT",
+    "cate_id": 4,
+    "price": 670.999,
+    "detail": "OVERSIZED FIT",
+    "image": "https://product.hstatic.net/1000351433/product/quantim01_e443d2fec9444151aeb2d49eb140c9f5_master.jpg"
+  },
+  {
+    "id": 12,
+    "name": "GREY BAD DESTROYED SWEATPANTS",
+    "cate_id": 4,
+    "price": 690.999,
+    "detail": "OVERSIZED FIT",
+    "image": "https://product.hstatic.net/1000351433/product/2__12__1626c9aabb034a23bc97f169b22d3825_master.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Lesac- SUNNY BAG",
+    "cate_id": 5,
+    "price": 810.999,
+    "detail": "OVERSIZED FIT",
+    "image": "https://localbrand.vn/wp-content/uploads/2022/02/5-mau-tui-xach-local-brand-sieu-to-khong-lo-danh-cho-cac-co-nang-cong-so-13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "NGAOS- Artbook",
+    "cate_id": 5,
+    "price": 810.999,
+    "detail": "OVERSIZED FIT",
+    "image": "https://localbrand.vn/wp-content/uploads/2022/02/5-mau-tui-xach-local-brand-sieu-to-khong-lo-danh-cho-cac-co-nang-cong-so-1.jpg"
+  },
+  {
+    "id": 15,
+    "name": "PUFFER SHOULDER BAG",
+    "cate_id": 5,
+    "price": 225.999,
+    "detail": "BOXY PUFFER",
+    "image": "https://product.hstatic.net/1000351433/product/1__36__105bff7ff9bc47a09a5fdeae4937a371_master.jpg"
+  }
+],
+        "orders": {
+          "1": {
+            "id": 1,
+            "customer_name": "Trần Khải Đình ",
+            "customer_address": "123 Main St",
+            "customer_email": "dinh@example.com",
+            "customer_phone_number": "555-1234",
+            "created_date": "2024-01-17",
+            "status": "Processing"
+          },
+          "2": {
+            "id": 2,
+            "customer_name": "Lý Văn Kiệt",
+            "customer_address": "456 Oak St",
+            "customer_email": "kiet@example.com",
+            "customer_phone_number": "555-5678",
+            "created_date": "2024-01-18",
+            "status": "Shipped"
+          },
+          "3": {
+            "id": 3,
+            "customer_name": "Lê Quốc An",
+            "customer_address": "789 Elm St",
+            "customer_email": "an@example.com",
+            "customer_phone_number": "555-9012",
+            "created_date": "2024-01-19",
+            "status": "Delivered"
+          },
+          "4": {
+            "id": 4,
+            "customer_name": "Mai Hảo Hảo",
+            "customer_address": "101 Pine St",
+            "customer_email": "hao@example.com",
+            "customer_phone_number": "555-3456",
+            "created_date": "2024-01-20",
+            "status": "Processing"
+          },
+          "5": {
+            "id": 5,
+            "customer_name": "Nguyễn Thành Phát",
+            "customer_address": "202 Cedar St",
+            "customer_email": "phat@example.com",
+            "customer_phone_number": "555-7890",
+            "created_date": "2024-01-21",
+            "status": "Shipped"
+          }
+        },
+        "order_details": {
+            "1": {
+              "order_id": 1,
+              "product_id": 1,
+              "quantity": 2,
+              "unit_price": 499.999
+            },
+            "2": {
+              "order_id": 2,
+              "product_id": 3,
+              "quantity": 1,
+              "unit_price": 799.999
+            },
+            "3": {
+              "order_id": 3,
+              "product_id": 5,
+              "quantity": 3,
+              "unit_price": 650.000
+            },
+            "4": {
+              "order_id": 4,
+              "product_id": 8,
+              "quantity": 2,
+              "unit_price": 389.000
+            },
+            "5": {
+              "order_id": 5,
+              "product_id": 10,
+              "quantity": 1,
+              "unit_price": 650.000
+            }
+          }
+      }
+  
