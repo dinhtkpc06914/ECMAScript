@@ -3,23 +3,23 @@
    [ 
      {
     "id": 1,
-    "name": "Áo thun"
+    "name": "T-shirt"
 },
  {
     "id": 2,
-    "name": "Áo sơ mi"
+    "name": "Shirt"
 },
  {
     "id": 3,
-    "name": "Áo khoác"
+    "name": "Pants"
 },
  {
     "id": 4,
-    "name": "Quần "
+    "name": "Jackets"
 },
  {
     "id": 5,
-    "name": "Túi xách"
+    "name": "Bags"
 }
 ],
 
