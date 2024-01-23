@@ -13,7 +13,8 @@ let showProducts = () => {
                 <td class="cell">${index++}</td>
                 <td class="cell"><span class="truncate">${element.name}</span></td>
                 <td class="cell"> <img src="${element.image}" alt="Image" class="img-fluid" width="70px" height="30px"></td>
-                <td class="cell"></td>            
+                <td class="cell text-danger">${element.price}</td>   
+                <td class="cell text-primary">${element.detail}</td>            
                 <td class="cell">
                     <a class="btn-sm app-btn-secondary bg-success text-white" href="#">fix</a>
                     <a class="btn-sm app-btn-secondary bg-danger text-white" href="#">del</a>
