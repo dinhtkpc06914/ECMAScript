@@ -1,4 +1,5 @@
 const API_URL = 'http://localhost:3000/';
+
 let products =  (Name) => {
     fetch(API_URL + `${Name}`)
         .then(response =>  response.json())
@@ -63,6 +64,7 @@ let productsDetails = (data) =>{
     </div>
     </div>`
 }
+
 
 
 
