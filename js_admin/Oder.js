@@ -23,8 +23,8 @@ let showOders = () => {
                 <td class="cell"><span class="truncate">${element.created_date}</span></td>
                 <td class="cell"><span class="truncate">${element.status}</span></td>
                 <td class="cell">
-                    <a class="btn-sm app-btn-secondary bg-success text-white" href="#">fix</a>
-                    <a class="btn-sm app-btn-secondary bg-danger text-white" href="#">del</a>
+                    <a class="btn-sm app-btn-secondary bg-success text-white" href="#">view</a>
+                   
                 </td>
             </tr>
                 `;
