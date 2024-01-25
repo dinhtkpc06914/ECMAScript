@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "posts 1",
+      "author": "ngu"
+    },
+    {
+      "id": 2,
+      "title": "posts 2",
+      "author": "ngục"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "bình luận 1",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "bình luận 2",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
