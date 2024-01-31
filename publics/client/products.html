@@ -11,6 +11,9 @@
 
     <title>Pixie - Products</title>
 <style>
+  .dropdown-menu {
+  display: none;
+}
 body {
   font-family: "Helvetica", "Arial", sans-serif;
 }
@@ -72,29 +75,22 @@ https://www.tooplate.com/view/2114-pixie
 
     <!-- Page Content -->
     <!-- Items Starts Here -->
-    <div class="featured-page">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="section-heading">
-              <div class="line-dec"></div>
-              <h1>Featured Items</h1>
-            </div>
-          </div>
-          <div class="col-md-8 col-sm-12">
-            <div id="filters" class="button-group">
-              <button class="btn btn-primary" data-filter="*">All Products</button>
-              <button class="btn btn-primary" data-filter=".new">Newest</button>
-              <button class="btn btn-primary" data-filter=".low">Low Price</button>
-              <button class="btn btn-primary" data-filter=".high">Hight Price</button>
+    
+        <div class="col-md-8 col-sm-12">
+          <div id="filters" class="button-group">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               CATEGORIES
+              </button>
+              <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" id="Categories">
+               
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  
+     
     <div class="featured container no-gutter">
-        <div class="row posts" id="showProducts">
+        <div class="row posts mt-5" id="showProducts">
               
           
         </div>
@@ -211,7 +207,9 @@ https://www.tooplate.com/view/2114-pixie
 
 
     <!-- Bootstrap core JavaScript -->
+   
     <script src="../../js_client/products.js"></script>
+    <script src="../../js_client/categories.js"></script>
     <!-- <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <!-- Additional Scripts -->
@@ -229,6 +227,23 @@ https://www.tooplate.com/view/2114-pixie
           t.style.color='#fff';
           }
       }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Xử lý sự kiện khi nút dropdown được nhấn
+        $(".dropdown-toggle").click(function () {
+          $(".dropdown-menu").toggle();
+        });
+    
+        // Xử lý sự kiện khi một mục trong dropdown được chọn
+        $(".dropdown-item").click(function () {
+          var filterValue = $(this).data("filter");
+          // Thực hiện các hành động cần thiết với giá trị bộ lọc được chọn
+          console.log("Filter by:", filterValue);
+        });
+      });
     </script>
 
 
