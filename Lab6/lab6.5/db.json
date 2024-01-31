@@ -2,24 +2,24 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Đình trần",
+      "author": "Đến từ vương quốc cổ đại"
     },
     {
       "id": 2,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Đình trần",
+      "author": "Vũ trụ song song"
     }
   ],
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
+      "body": "ma da vĩnh long",
       "postId": 1
     },
     {
       "id": 2,
-      "body": "some comment",
+      "body": "Quỷ ăn tạng",
       "postId": 1
     }
   ],
