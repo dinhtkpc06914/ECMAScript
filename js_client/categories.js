@@ -56,9 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let categories = {
             "T-shirt": 1,
             "Shirt": 2,
-            "Pants": 3,
-            "Jackets": 4,
-          
+            "Jackets": 3,
+            "Pants": 4,
             "Bags": 5
         };
         return categories[categoryName] || null;

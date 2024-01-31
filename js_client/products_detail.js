@@ -1,25 +1,27 @@
 const API_URL = 'http://localhost:3000/';
 
-let products =  (Name) => {
-    fetch(API_URL + `${Name}`)
-        .then(response =>  response.json())
-           .then(data => {
-                console.log(data);
-                const pd_details = productsDetails(data);
-                const id_products = document.getElementById('produc_details');
-               id_products.innerHTML = pd_details;
-            })
-      
+let getProductDetailsById = (productId) => {
+    fetch(API_URL + `products/${productId}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            const pd_details = productsDetails(data);
+            const id_products = document.getElementById('produc_details');
+            id_products.innerHTML = pd_details;
+        })
         .catch(function (error) {
-            console.error('There was a problem with the products request:', error);
+            console.error('There was a problem with the product details request:', error);
         });
 }
 
-products("products");
+// Lấy ID sản phẩm từ URL
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get('id');
 
+// Gọi hàm để lấy thông tin chi tiết sản phẩm dựa trên ID
+getProductDetailsById(productId);
 
-let productsDetails = (data) =>{
-    const products1 = data[0];
+let productsDetails = (product) => {
     return `<div class="row">
     <div class="col-md-12">
       <div class="section-heading">
@@ -32,7 +34,7 @@ let productsDetails = (data) =>{
         <div id="slider" class="flexslider">
           <ul class="slides">
             <li>
-            <img src="${products1.image}" alt="Image" class="img-fluid">
+              <img src="${product.image}" alt="Image" class="img-fluid">
             </li>                                        
           </ul>
         </div>          
@@ -40,10 +42,10 @@ let productsDetails = (data) =>{
     </div>
     <div class="col-md-6">
       <div class="right-content">
-        <h4>${products1.name}</h4>
-        <h6>${products1.price}</h6>
-        <p>${products1.detail} </p>
-        <span>7 left on stock</span>
+        <h4>${product.name}</h4>
+        <h6>${product.price}</h6>
+        <p>${product.detail} </p>
+        <span>7 left in stock</span>
         <form action="" method="get">
           <label for="quantity">Quantity:</label>
           <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
@@ -62,27 +64,5 @@ let productsDetails = (data) =>{
         </div>
       </div>
     </div>
-    </div>`
+    </div>`;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
