@@ -10,7 +10,7 @@ let getProductDetailsById = (productId) => {
             id_products.innerHTML = pd_details;
         })
         .catch(function (error) {
-            console.error('There was a problem with the product details request:', error);
+            console.error('Lỗi:', error);
         });
 }
 
