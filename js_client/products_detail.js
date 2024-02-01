@@ -43,8 +43,8 @@ let productsDetails = (product) => {
     <div class="col-md-6">
       <div class="right-content">
         <h4>${product.name}</h4>
-        <h6>${product.price}</h6>
-        <p>${product.detail} </p>
+        <h6>${product.price}$</h6>
+        <p>${product.detail}</p>
         <span>7 left in stock</span>
         <form action="" method="get">
           <label for="quantity">Quantity:</label>

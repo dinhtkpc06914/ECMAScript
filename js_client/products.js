@@ -13,7 +13,7 @@ let showProducts = () => {
                             <div class="featured-item">
                                 <img src="${element.image}" alt="Image" class="img-fluid" width="200px" height="50px">
                                 <h4>${element.name}</h4>
-                                <h6>${element.price}</h6>
+                                <h6>${element.price}$</h6>
                                 <p class="desc mb-4">${element.detail}</p>
                             </div>
                         </a>
@@ -22,14 +22,11 @@ let showProducts = () => {
             });
             shows.innerHTML = html;
         })
-        .catch(error => {
-            // Xử lý lỗi
+        .catch(error => {         
             console.error('Error fetching data:', error);
         });
 }
-
 let showProductDetails = (productId) => {
-    // Chuyển hướng đến trang chi tiết sản phẩm
     window.location.href = `single-product.html?id=${productId}`;
 }
 
