@@ -2,7 +2,7 @@
   "name": "lab7",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +10,17 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.56.0"
+  }, 
+  "husky":{
+    "hooks":{
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged":{
+    "*.{js,json,css,md,html}":[
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
+  
 }
