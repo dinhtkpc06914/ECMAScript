@@ -1,9 +1,7 @@
+let string2 = 'hello';
+let string3 =     'hello';
+let string4 =    'hello';
 
-const name = '    Đình';
-const person = { first: name }; // Thêm khoảng trắng sau dấu hai chấm
-console.log(person);
+let stringFinal = "Xin Chao"+string2+string3+string4;
 
-const sayHelloLinting = (fName) => {
-    console.log(`Hello Linting, ${fName}`);
-};
-
+stringFinal;
