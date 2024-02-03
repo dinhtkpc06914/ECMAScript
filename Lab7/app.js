@@ -1,6 +1,6 @@
-let string2 = 'hello';
-let string3 = 'hello';
-           let string4 =    'hello';
- let stringFinal = "X         in Chao"+string2+string3+string4;
-
-                                      stringFinal;
+const name = "Đình"
+const person = {first: name}
+console.log(person);
+const sayHelloLinting = (fName) => {
+    console.log(`Hello lingting ${fName}`);
+}
