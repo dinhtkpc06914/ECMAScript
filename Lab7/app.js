@@ -1,5 +1,5 @@
 
-const name = "Đình";
+const name = 'Đình';
 const person = { first: name }; // Thêm khoảng trắng sau dấu hai chấm
 console.log(person);
 
