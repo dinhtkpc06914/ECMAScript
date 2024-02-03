@@ -17,11 +17,8 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{
-    "*.{js,json,css,md,html}":[
-      "prettier --single-quote --write",
-      "git add"
-    ]
+  "lint-staged": {
+    "*.js": "eslint"
   }
   
 }
