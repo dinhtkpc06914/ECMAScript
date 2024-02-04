@@ -17,6 +17,27 @@
 body {
   font-family: "Helvetica", "Arial", sans-serif;
 }
+#paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+button.current-page {
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid #3498db;
+}
 </style>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -95,8 +116,8 @@ https://www.tooplate.com/view/2114-pixie
           
         </div>
     </div>
-
-    <div class="page-navigation">
+<div id="paginationContainer"></div>
+    <!-- <div class="page-navigation">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -109,7 +130,7 @@ https://www.tooplate.com/view/2114-pixie
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Featred Page Ends Here -->
 
 

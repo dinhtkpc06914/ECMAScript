@@ -58,17 +58,21 @@ const renderPaginationButtons = (totalItems) => {
     previousButton.disabled = currentPage === 1; // tắt nút previous khi ở trang đầu tiên
     paginationContainer.appendChild(previousButton);
 
-  // Tính toán các trang cần hiển thị
+    // Tính toán các trang cần hiển thị
     let startPage = Math.max(1, currentPage - nuaSoTrangHienThiToiDa);
     let endPage = Math.min(totalPages, startPage + soTrangHienThiToiDa - 1);
 
-    for (let i = 1; i <= totalPages; i++) {
+    for (let i = startPage; i <= endPage; i++) {
         const button = document.createElement('button');
         button.textContent = i;
         button.addEventListener('click', () => changePage(i));
+        if (i === currentPage) {
+            button.classList.add('current-page'); // Đánh dấu trang hiện tại
+        }
         paginationContainer.appendChild(button);
     }
- // Thêm dấu "..." nếu có các trang không được hiển thị
+
+    // Thêm dấu "..." nếu có các trang không được hiển thị
     if (startPage > 1) {
         const ellipsis = document.createElement('span');
         ellipsis.textContent = '...';
@@ -80,9 +84,10 @@ const renderPaginationButtons = (totalItems) => {
         ellipsis.textContent = '...';
         paginationContainer.appendChild(ellipsis);
     }
+
     const nextButton = document.createElement('button');
     nextButton.textContent = 'Next';
     nextButton.addEventListener('click', () => changePage(currentPage + 1));
-    nextButton.disabled = currentPage === totalPages; //tắt nút next khi ở trang cuối cùng
+    nextButton.disabled = currentPage === totalPages; // tắt nút next khi ở trang cuối cùng
     paginationContainer.appendChild(nextButton);
 }

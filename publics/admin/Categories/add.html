@@ -11,29 +11,6 @@
 <title>Bad Habbits</title>
 <link href="../assets/css/bootstrap.css" rel="stylesheet">
 <link href="../assets/css/main.css" rel="stylesheet">
-<style>
-#paginationContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-button {
-    margin: 0 5px;
-    padding: 8px 12px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-}
-
-button.current-page {
-    background-color: #3498db;
-    color: #fff;
-    border: 1px solid #3498db;
-}
-</style>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -54,7 +31,7 @@ button.current-page {
                       <span class="theme-item"> Home</span></a
                     >
                   </li>
-				  <li>
+                  <li>
                     <a href="../Orders/list_order.html"
                       ><i
                         class="data-feather theme-item"
@@ -80,9 +57,6 @@ button.current-page {
                       <span class="theme-item">List categories</span></a
                     >
                   </li>          
-                
-               
-                 
                 </ul>
       
                 <div class="text-center mt-5 mb-5">
@@ -403,6 +377,7 @@ button.current-page {
 						</div>
 					</div>
 				</div>
+
 				<div id="sidebarOverlayNav" class="screen-overlay float-end">
 					<a href="javascript:void(0)" class="closebtn"
 						onclick="closeOverlayNav()">&times;</a>
@@ -411,66 +386,11 @@ button.current-page {
 							href="#">Clients</a> <a href="#">Contact</a>
 					</div>
 				</div>
-				<div class="content">
-					<div class="container-fluid">
-						<div class="row mt-2">
-							<div class="col-md-6 float-start">
-								<h4 class="m-0 text-dark text-muted">PRODUCTS</h4>
-							</div>
-							<div class="col-md-6">
-								<ol class="breadcrumb float-end">
-									<li class="breadcrumb-item"><a href="#"> Home</a></li>
-									<li class="breadcrumb-item active">Preferences</li>
-								</ol>
-							</div>
-						</div>
-						<div class="content">
-							<div class="canvas-wrapper">
 
-								<div class="row">
-									<div class="col-md-12">
-										<div class="row">
-											
-											<div class="col-md-12 col-xl-12">
-												<div class="card">																																				
-												</div>
-											</div>
-											<div class="app-card app-card-orders-table shadow-sm mb-5">
-												<div class="app-card-body">
-													<div class="table-responsive">
-														<table class="table app-table-hover mb-0 text-left">
-															<thead>
-																<tr>
-																	<th class="cell">STT</th>
-																	<th class="cell">Name products </th>
-																	<th class="cell">Images</th>
-																	<th class="cell">Price</th>
-                                                                    <th class="cell">Describe</th>
-																
-                                                                    <th class="cell">Operation</th>
-																</tr>
-															</thead>
-															<tbody id="showProducts">
-																
-							
-															</tbody>
-															
-														</table>
-													</div><!--//table-responsive-->
-												   
-												</div><!--//app-card-body-->	
-											
-											</div><!--//app-card-->
-											<div  id="paginationContainer"></div>	
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<!-- 							Canvas Wrapper End -->
-						</div>
-					</div>
-				</div>
+
+
+
+				cccc
 			</div>
 		</div>
 	</div>
@@ -496,7 +416,7 @@ button.current-page {
 		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
 		<i data-feather="arrow-up-circle"></i>
 	</button>
-    <script src="../../../js_admin/product.js"></script>
+    <script src="../../../js_admin/categories.js"></script>
 	<script src="../assets/js/feather.min.js"></script>
 	<script src="../assets/js/bootstrap.bundle.min.js"></script>
 	<script src="../assets/js/script.js"></script>
