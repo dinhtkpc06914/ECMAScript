@@ -8,6 +8,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="shortcut icon" type="image/x-icon" href="../assets/img/logongu.jpg">
 	<title>Bad Habbits</title>
+	<style>
+		 #editCategoryName:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+		#editCategoryModal{
+		align-items: center;
+		}
+	</style>
 	<link href="../assets/css/bootstrap.css" rel="stylesheet">
 	<link href="../assets/css/main.css" rel="stylesheet">
 </head>
@@ -76,151 +86,9 @@
 											href="index.html"><i class="data-feather theme-item"
 												data-feather="home"></i> <span class="theme-item">Home </span></a>
 									</div>
-								</li>
+								</li>											
 
-
-								<li class="nav-item dropdown nav-dropdown"><a
-										class="nav-item nav-link dropdown-toggle text-secondary py-0" href="#"
-										id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false"> <i class="data-feather theme-item"
-											data-feather="link"></i> <span class="theme-item">Links</span> <i
-											class="data-feather theme-item" data-feather="chevron-down"></i></a>
-									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a href="index2.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="home"></i> Home 2</a></li>
-										<li><a href="form.html" class="dropdown-item mt-2 py-0"><i class="data-feather"
-													data-feather="file-text"></i> Forms</a></li>
-										<li><a href="charts.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="pie-chart"></i> Charts</a></li>
-										<li><a href="components.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="grid"></i> Components</a></li>
-										<li><a href="extras.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="globe"></i> Extras</a></li>
-										<li><a href="loginregister.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="log-in"></i> Login</a></li>
-										<li><a href="profile.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="user"></i> Profile</a></li>
-										<li><a href="preferences.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="gift"></i> Preferences</a></li>
-										<li><a href="animation.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="loader"></i> Animation</a></li>
-										<li><a href="carousel.html" class="dropdown-item mt-2 py-0"><i
-													class="data-feather" data-feather="play"></i> Carousel</a></li>
-										<li><a href="blank.html" class="dropdown-item mt-2 py-0"><i class="data-feather"
-													data-feather="file"></i> Blank</a></li>
-									</ul>
-								</li>
-
-
-								<li class="nav-item dropdown nav-dropdown"><a
-										class="nav-item nav-link dropdown-toggle text-secondary py-0" href="#"
-										id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false"><i class="data-feather theme-item"
-											data-feather="grid"></i> <span class="theme-item">Services</span><i
-											class="data-feather theme-item" data-feather="chevron-down"></i></a>
-									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-										<li><a class="dropdown-item" href="#">Service 1</a></li>
-										<li><a class="dropdown-item" href="#">Service 2</a></li>
-										<li class="dropdown-submenu"><a class="dropdown-item mr-3" href="#">Service
-												Level 1 <i class="data-feather" data-feather="chevron-right"></i></a>
-											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
-												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
-												<li class="dropdown-submenu"><a class="dropdown-item" href="#">Service
-														Level 2<i class="data-feather"
-															data-feather="chevron-right"></i></a>
-													<ul class="dropdown-menu">
-														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
-														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
-													</ul>
-												</li>
-												<li class="dropdown-submenu"><a class="dropdown-item" href="#">Service
-														Level 2<i class="data-feather"
-															data-feather="chevron-right"></i></a>
-													<ul class="dropdown-menu">
-														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
-														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<div class="nav-dropdown">
-										<a class="nav-item nav-link active text-secondary py-0" aria-current="page"
-											href="#" onclick="openOverlayNav()">
-											<i class="data-feather theme-item" data-feather="bookmark"></i>
-											<span class="theme-item">Favorites </span>
-										</a>
-									</div>
-								</li>
-
-								<li class="nav-item dropdown nav-dropdown"><a
-										class="nav-item nav-link dropdown-toggle text-secondary notification" href="#"
-										id="navbarDropdownmailAlert" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false"> <i class="data-feather theme-item"
-											data-feather="bell"></i>
-										<badge class="badge bg-danger">12</badge>
-									</a>
-									<ul class="dropdown-menu notification-menu"
-										aria-labelledby="navbarDropdownmailAlert">
-										<li class="text-center"><i class="data-feather me-2"
-												data-feather="message-square"></i>Notifications</li>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-white bg-info"><i
-													class="data-feather me-2" data-feather="user"></i> Lorem
-												ipsum dolor sit amet</a></li>
-										<div class="dropdown-divider"></div>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-white bg-info"><i
-													class="data-feather me-2" data-feather="user"></i> Duis aute
-												irure dolor in reprehenderit</a></li>
-										<div class="dropdown-divider"></div>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-white bg-info"><i
-													class="data-feather me-2" data-feather="user"></i> Excepteur
-												sint occaecat cupidatat</a></li>
-										<div class="dropdown-divider"></div>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-white bg-info"><i
-													class="data-feather me-2" data-feather="user"></i> Aute
-												irure dolor in reprehenderit in</a></li>
-										<div class="dropdown-divider"></div>
-										<li class="text-center"><a href="#" class="dropdown-item mt-2"><i
-													class="data-feather me-2" data-feather="list"></i> See All
-												Notifications</a></li>
-									</ul>
-								</li>
-
-								<li class="nav-item dropdown nav-dropdown"><a
-										class="nav-item nav-link dropdown-toggle text-secondary notification" href="#"
-										id="navbarDropdownmail" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false"> <i class="data-feather theme-item"
-											data-feather="mail"></i>
-										<badge class="badge bg-primary">23</badge>
-									</a>
-									<ul class="dropdown-menu notification-menu" aria-labelledby="navbarDropdownmail">
-										<li class="text-center"><i class="data-feather me-2"
-												data-feather="mail"></i>Mails</li>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-danger"><i
-													class="data-feather me-2" data-feather="mail"></i> Lorem
-												ipsum dolor sit amet</a></li>
-										<div class="dropdown-divider"></div>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-danger"><i
-													class="data-feather me-2" data-feather="mail"></i> Duis aute
-												irure dolor in reprehenderit</a></li>
-										<div class="dropdown-divider"></div>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-primary"><i
-													class="data-feather me-2" data-feather="mail"></i> Excepteur
-												sint occaecat cupidatat</a></li>
-										<div class="dropdown-divider"></div>
-										<li><a href="#" class="dropdown-item custom-dropmenu mt-2 text-warning"><i
-													class="data-feather me-2" data-feather="mail"></i> Aute
-												irure dolor in reprehenderit in</a></li>
-										<div class="dropdown-divider"></div>
-										<li class="text-center"><a href="#" class="dropdown-item mt-2"><i
-													class="data-feather me-2" data-feather="list"></i> See All Mails</a>
-										</li>
-									</ul>
-								</li>
-
+							
 							</ul>
 							<div id="navSearchForm" class="mx-1">
 								<form action="#" class="search-form py-0">
@@ -364,10 +232,7 @@
 							href="#">Contact</a>
 					</div>
 				</div>
-
-
-
-
+				
 				<div class="content">
 					<div class="container-fluid">
 						<div class="row mt-2">
@@ -381,21 +246,13 @@
 								</ol>
 							</div>
 						</div>
-
-
 						<div class="content">
-
 							<div class="canvas-wrapper">
-
 								<div class="row">
 									<div class="col-md-12">
 										<div class="row">
-
 											<div class="col-md-12 col-xl-12">
 												<div class="card">
-
-
-
 												</div>
 											</div>
 											<div class="app-card app-card-orders-table shadow-sm mb-5">
@@ -404,9 +261,9 @@
 														<table class="table app-table-hover mb-0 text-left">
 															<thead>
 																<tr>
-																	<th class="cell">STT</th>
-																	<th class="cell">Tên Loại Sản Phẩm</th>
-																	<th class="cell">Thao tác</th>
+																	<th class="cell">Index</th>
+																	<th class="cell">Name Categories</th>
+																	<th class="cell">Operation</th>
 																</tr>
 															</thead>
 															<tbody id="showCategories">
@@ -419,14 +276,11 @@
 												</div><!--//app-card-body-->
 											</div><!--//app-card-->
 											<!-- Trong phần "CATEGORIES" -->
-
-
 											<!-- Thêm nút "Add Categories" -->
 											<div class="col-md-12 mt-3">
 												<button class="btn btn-sm btn-primary"
 													onclick="showAddCategoryForm()">Add Categories</button>
 											</div>
-
 											<!-- Form thêm Categories (ẩn ban đầu) -->
 											<div id="addCategoryForm" style="display: none;">
 												<!-- Thêm form thêm Categories vào đây -->
@@ -438,10 +292,24 @@
 														onclick="hideAddCategoryForm()">Cancel</button>
 												</form>
 											</div>
+											<div id="editCategoryModal" class="modal mt-2">
+												<div class="modal-content d-flex align-items-center">
+													<span class="close" onclick="closeEditCategoryModal()">&times;</span>
+													<div class="text-center">
+														<h2>Edit Categories</h2>
+														<input class="col-sm-12" type="text" id="editCategoryName" placeholder="Tên danh mục">
+														<div class="d-flex mt-2 justify-content-center">
+															<button class="col-sm-4 btn-sm app-btn-secondary bg-success text-white" onclick="saveEditedCategory()">Edit</button>
+															<button class="col-sm-4 btn-sm app-btn-secondary bg-danger text-white" onclick="exitEditedCategory()">Exits</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											
 										</div>
 									</div>
-								</div>
-
+								</div>					
 							</div>
 							<!-- 							Canvas Wrapper End -->
 						</div>	
