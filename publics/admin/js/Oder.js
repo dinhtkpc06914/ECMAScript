@@ -60,7 +60,7 @@ function displayOrderDetails(orderDetails) {
        </tr>
        <td>${detail.product_id}</td>
            <td>${detail.quantity}</td>
-           <td>${detail.unit_price}</td>
+           <td>${detail.unit_price}$</td>
            </tbody>
         `;
     });
