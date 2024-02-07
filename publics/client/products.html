@@ -38,11 +38,38 @@ button.current-page {
     color: #fff;
     border: 1px solid #3498db;
 }
+/* CSS cho ô tìm kiếm */
+.search-form {
+    position: relative;
+}
+
+.search-form input[type="text"] {
+    width: 200px; /* Độ rộng của ô tìm kiếm */
+    padding: 8px 12px; /* Khoảng cách nội dung bên trong ô tìm kiếm */
+    border: 1px solid #ccc; /* Đường viền ô tìm kiếm */
+    border-radius: 4px; /* Độ cong của các góc */
+    outline: none; /* Loại bỏ đường viền màu xanh khi ô tìm kiếm được focus */
+}
+
+/* CSS cho nút tìm kiếm */
+.search-form button {
+    position: absolute; /* Đặt nút tìm kiếm tuyệt đối trong ô tìm kiếm */
+    top: 0;
+    right: 0;
+    background-color: transparent; /* Nền trong suốt */
+    border: none; /* Không có đường viền */
+    cursor: pointer; /* Con trỏ chuyển đổi khi di chuột qua nút */
+}
+
+/* CSS cho biểu tượng của nút tìm kiếm */
+.search-form button i {
+    font-size: 18px; /* Kích thước của biểu tượng */
+    color: #666; /* Màu của biểu tượng */
+}
+
 </style>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/css/tooplate-main.css">
@@ -54,13 +81,21 @@ https://www.tooplate.com/view/2114-pixie
   </head>
 
   <body>
-    
+   
     <!-- Pre Header -->
     <div id="pre-header">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <span>Suspendisse laoreet magna vel diam lobortis imperdiet</span>
+            <div id="searchInput" class="float-sm-right">
+              <form action="#" class="search-form py-0">
+                  <input type="text" placeholder="Search" id="searchBox">
+                  <button type="submit" id="searchButton">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+              </form>
+          </div>
+          
           </div>
         </div>
       </div>
@@ -68,6 +103,7 @@ https://www.tooplate.com/view/2114-pixie
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      
       <div class="container">
         <a class="navbar-brand" href="#"><img src="../assets/images/logo.webp" alt="" width="500px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -230,7 +266,9 @@ https://www.tooplate.com/view/2114-pixie
     <!-- Bootstrap core JavaScript -->
    
     <script src="./js/products.js"></script>
+    <script src="./js/search.js"></script>
     <script src="./js/categories.js"></script>
+    
     <!-- <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <!-- Additional Scripts -->

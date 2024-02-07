@@ -89,3 +89,5 @@ const renderPaginationButtons = (totalItems) => {
     nextButton.disabled = currentPage === totalPages; // tắt nút next khi ở trang cuối cùng
     paginationContainer.appendChild(nextButton);
 }
+
+

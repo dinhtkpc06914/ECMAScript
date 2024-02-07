@@ -49,6 +49,7 @@ function xoaDanhMuc(idDanhMuc) {
         console.error('Lỗi trong quá trình xóa:', error);
     });
 }
+// thêm danh mục
 
 function showAddCategoryForm() {
     document.getElementById('addCategoryForm').style.display = 'block';
@@ -87,7 +88,7 @@ showCategories();
 
 
 
-
+// sửa danh mục
 
 function showEditCategoryModal(categoryId, categoryName) {
     document.getElementById('editCategoryModal').style.display = 'block';
