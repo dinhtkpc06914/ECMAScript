@@ -17,52 +17,8 @@
 
 		<div class="wrapper">
 
-            <nav id="sidebar" class="active">
-                <div class="sidebar-header text-center">
-                  <img src="assets/img/leaf.svg" alt="logo" class="app-logo" />
-                  <h4 class="sidebar-title theme-item">BAD HABBITS STUDIO</h4>
-                </div>
-      
-                <ul class="list-unstyled components text-secondary">
-                  <li>
-                    <a href="./index.html"
-                      ><i class="data-feather theme-item" data-feather="home"></i>
-                      <span class="theme-item"> Home</span></a
-                    >
-                  </li>
-				  <li>
-                    <a href="./Orders/list_order.html"
-                      ><i
-                        class="data-feather theme-item"
-                        data-feather="file-text"
-                      ></i>
-                      <span class="theme-item">List Order</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="./Products/products.html"
-                      ><i
-                        class="data-feather theme-item"
-                        data-feather="pie-chart"
-                      ></i>
-                      <span class="theme-item">List Products</span></a
-                    >
-                  </li>
-                
-               
-                  <li>
-                    <a href="./Categories/categories.html"
-                      ><i class="data-feather theme-item" data-feather="gift"></i>
-                      <span class="theme-item">List categories</span></a
-                    >
-                  </li>          
-                </ul>
-      
-                <div class="text-center mt-5 mb-5">
-                  <a href="#" class="theme-btn" onClick="removeCookieSidebar()"
-                    >Reset</a
-                  >
-                </div>
+            <nav id="sidebar" class="active" >
+				<div id="header"> </div>
               </nav>
 
 			<div id="bodywrapper" class="container-fluid showhidetoggle">
@@ -553,20 +509,8 @@
 
 		</div>
 	</div>
-	<footer class="footer container mt-auto py-1">
-		<div
-			class="d-sm-flex justify-content-center justify-content-sm-between">
-			<span
-				class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
-				Copyright © Open Source <script>
-					document.write(new Date().getFullYear())
-				</script>
-			</span> <span
-				class="float-none text-muted float-sm-right d-block mt-1 mt-sm-0 text-center">
-				AVNI - <a href="https://github.com/ajkr195/Avni" target="_blank">Open
-					Source Bootstrap 5 dashboard</a>
-			</span>
-		</div>
+	<footer class="footer container mt-auto py-1" id="footer">
+		
 	</footer>
 	<div id="loading" class="spinner-border text-primary align-middle"
 		role="status"></div>
@@ -575,6 +519,8 @@
 		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
 		<i data-feather="arrow-up-circle"></i>
 	</button>
+	<script src="../admin/js/header.footer.js"></script>
+	<script src="../admin/js/import.header.footer.js" type="module"></script>
 	<script src="assets/js/feather.min.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/Chart.min.js"></script>
