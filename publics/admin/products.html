@@ -7,10 +7,10 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="shortcut icon" type="image/x-icon" href="../assets/img/logongu.jpg">
+<link rel="shortcut icon" type="image/x-icon" href="./assets/img/logongu.jpg">
 <title>Bad Habbits</title>
-<link href="../assets/css/bootstrap.css" rel="stylesheet">
-<link href="../assets/css/main.css" rel="stylesheet">
+<link href="./assets/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/css/main.css" rel="stylesheet">
 <style>
 #paginationContainer {
     display: flex;
@@ -42,54 +42,7 @@ button.current-page {
 		<div class="wrapper">
 
             <nav id="sidebar" class="active">
-                <div class="sidebar-header text-center">
-                  <img src="../assets/img/leaf.svg" alt="logo" class="app-logo" />
-                  <h4 class="sidebar-title theme-item">BAD HABBITS STUDIO</h4>
-                </div>
-      
-                <ul class="list-unstyled components text-secondary">
-                  <li>
-					<a href="../index.html"
-                      ><i class="data-feather theme-item" data-feather="home"></i>
-                      <span class="theme-item"> Home</span></a
-                    >
-                  </li>
-				  <li>
-                    <a href="../Orders/list_order.html"
-                      ><i
-                        class="data-feather theme-item"
-                        data-feather="file-text"
-                      ></i>
-                      <span class="theme-item">List Order</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="../Products/products.html"
-                      ><i
-                        class="data-feather theme-item"
-                        data-feather="pie-chart"
-                      ></i>
-                      <span class="theme-item">List Products</span></a
-                    >
-                  </li>
-                
-               
-                  <li>
-                    <a href="../Categories/categories.html"
-                      ><i class="data-feather theme-item" data-feather="gift"></i>
-                      <span class="theme-item">List categories</span></a
-                    >
-                  </li>          
-                
-               
-                 
-                </ul>
-      
-                <div class="text-center mt-5 mb-5">
-                  <a href="#" class="theme-btn" onClick="removeCookieSidebar()"
-                    >Reset</a
-                  >
-                </div>
+               <div id="header"></div>
               </nav>
 
 			<div id="bodywrapper" class="container-fluid showhidetoggle">
@@ -101,7 +54,7 @@ button.current-page {
 							class="btn btn-light py-0">
 							<i data-feather="menu"></i> <span></span>
 						</button>
-						<img src="../assets/img/logongu.jpg" alt="logo"
+						<img src="./assets/img/logongu.jpg" alt="logo"
 							class="app-logo theme-item mx-2 navbrandarea1">
 						<h4 class="sidebar-title theme-item mt-2 navbrandarea2 text-dark">BAD HABBITS STUDIO</h4>
 						<button class="navbar-toggler py-0" type="button"
@@ -138,7 +91,7 @@ button.current-page {
 										class="nav-item nav-link dropdown-toggle text-secondary py-0"
 										id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
 										aria-expanded="false"> <img class="theme-item user-avatar"
-										src="../assets/img/earth.svg" alt="User image"> <!--<i class="theme-item" -->
+										src="./assets/img/earth.svg" alt="User image"> <!--<i class="theme-item" -->
 										<!--data-feather="user"></i> --> <span class="theme-item">My
 											Name</span><i class="theme-item" data-feather="chevron-down"></i></a>
 									<ul class="dropdown-menu dropdown-menu-right"
@@ -332,19 +285,7 @@ button.current-page {
 		</div>
 	</div>
 	<footer class="footer mt-auto py-1 mx-4">
-		<div
-			class="d-sm-flex justify-content-center justify-content-sm-between">
-			<span
-				class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
-				Copyright © Open Source <script>
-					document.write(new Date().getFullYear())
-				</script>
-			</span> <span
-				class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-				AVNI - <a href="https://github.com/ajkr195/Avni" target="_blank">Open
-					Source Bootstrap 5 dashboard</a>
-			</span>
-		</div>
+		<div id="footer"></div>
 	</footer>
 	<div id="loading" class="spinner-border text-primary align-middle"
 		role="status"></div>
@@ -353,10 +294,12 @@ button.current-page {
 		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
 		<i data-feather="arrow-up-circle"></i>
 	</button>
-    <script src="../js/product.js"></script>
-	<script src="../assets/js/feather.min.js"></script>
-	<script src="../assets/js/bootstrap.bundle.min.js"></script>
-	<script src="../assets/js/script.js"></script>
+    <script src="./js/product.js"></script>
+	<script src="./js/header.footer.js"></script>
+	<script src="./js/import.header.footer.js" type="module"></script>
+	<script src="./assets/js/feather.min.js"></script>
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/js/script.js"></script>
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function(event) {
 			feather.replace();
