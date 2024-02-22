@@ -100,30 +100,26 @@ https://www.tooplate.com/view/2114-pixie
             </div>
           </div>
         </div>
-     
+
     <div class="featured container no-gutter">
+      <div class="col-md-5  mt-5">
+      
+        <h6 for="priceRangeFilter" class="fw-bold">Select price range to filter:</h6>
+        <div class="input-group">
+          <input type="number" id="minPrice" class="form-control" placeholder="Lowest price..." step="50">
+          <div>|||||||||||</div>
+          <input type="number" id="maxPrice" class="form-control" placeholder="Highest price..." step="50">
+        </div>
+      
+        <button onclick="locSanPham()" class="btn btn-primary mt-3 text-light">Apply</button>
+      </div>
         <div class="row posts mt-5" id="showProducts">
               
           
         </div>
     </div>
+    
 <div id="paginationContainer"></div>
-    <!-- <div class="page-navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul>
-              <li class="current-page"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Featred Page Ends Here -->
-
 
     <!-- Subscribe Form Starts Here -->
     <div class="subscribe-form">
@@ -208,6 +204,7 @@ https://www.tooplate.com/view/2114-pixie
     <!-- Bootstrap core JavaScript -->
    
     <script src="./js/products.js"></script>
+    <script src="./js/locsanpham.js"></script>
     <script src="./js/categories.js"></script>
     <script src="../client/js/header.footer.js"></script>
     <script src="../client/js/import.header.footer.js" type="module"></script>

@@ -18,7 +18,7 @@ function showOrders() {
                         <td>${order.created_date}</td>
                         <td>${order.status}</td>
                         <td>
-                            <button class="btn-sm app-btn-secondary bg-success text-white view-order" data-order-id="${order.id}">View</button>
+                            <a class="btn btn-primary" href="./order_details.html?id=${order.id}">view</a>
                         </td>
                     </tr>
                 `;
@@ -41,30 +41,6 @@ function viewOrderDetails(orderId) {
         .catch(error => {
             console.error('Error fetching order details:', error);
         });
-}
-
-// Hiển thị thông tin chi tiết đơn hàng
-function displayOrderDetails(orderDetails) {
-    const modalBody = document.getElementById('orderDetailsModalBody');
-    let html = '';
-    orderDetails.forEach(detail => {
-        html += `  <div class="col-md-10 float-start">
-        <h4 class="text-dark text-muted">Order_details</h4>
-      </div>
-
-           <tbody>
-           <tr>
-           <th class="cell">Product Id</th>
-           <th class="cell">Quantity</th>
-           <th class="cell">Price</th>																		
-       </tr>
-       <td>${detail.product_id}</td>
-           <td>${detail.quantity}</td>
-           <td>${detail.unit_price}$</td>
-           </tbody>
-        `;
-    });
-    modalBody.innerHTML = html;
 }
 
 // Thêm sự kiện click vào nút "view"
